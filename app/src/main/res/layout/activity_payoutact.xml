@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    android:background="@drawable/txtvbackground"
+    android:backgroundTint="#00FFFFFF"
+    android:orientation="vertical"
+    tools:context=".fragment.profileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="135dp"
+        android:fontFamily="@font/yeon_sung"
+        android:gravity="center_horizontal"
+        android:text="@string/edit_profile"
+        style="@style/TEXT"
+        android:textSize="29sp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/nameprof"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/txtvbackground"
+                android:elevation="25sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeon_sung"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="@string/name"
+                    style="@style/TEXT"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="356dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/yeon_sung"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10sp"
+                    android:text="@string/shravan_soni"
+                    android:textColor="#6D6B6B"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/adressprof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/txtvbackground"
+                android:elevation="25sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeon_sung"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="@string/address"
+                    style="@style/TEXT"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="356dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/yeon_sung"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10sp"
+                    android:padding="8dp"
+                    android:text="@string/dumm_addr"
+                    android:textColor="#6D6B6B"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phonprof"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/txtvbackground"
+                android:elevation="15sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeon_sung"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="@string/phoneno"
+                    style="@style/TEXT"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/editTextText5"
+                    android:layout_width="356dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/yeon_sung"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10sp"
+                    android:text="@string/num"
+                    android:textColor="#6D6B6B"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailprof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/txtvbackground"
+                android:elevation="25sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/yeon_sung"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="@string/payment_method"
+                    style="@style/TEXT"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cashondelivery" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/txtvbackground"
+                android:elevation="15sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/paymentmethod"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeon_sung"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="@string/total"
+                    style="@style/TEXT"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/payby"
+                    android:layout_width="356dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/yeon_sung"
+                    android:inputType="none"
+                    android:paddingStart="10sp"
+                    android:text="@string/price2"
+                    android:textColor="@color/green"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/paynow"
+                android:elevation="100dp"
+                android:background="@drawable/txtvbackground"
+                android:text="@string/place_order"
+                android:textColor="@color/lgreen"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:fontFamily="@font/yeon_sung"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="35dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
